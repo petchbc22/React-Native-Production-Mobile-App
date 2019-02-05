@@ -7,6 +7,7 @@ export default {
   },
   navItemStyle: {
     padding: 10,
+    paddingLeft:20,
     color: 'white'
   },
   navSectionStyle: {
@@ -22,6 +23,21 @@ export default {
   },
   footerContainer: {
     padding: 20,
-    backgroundColor: 'lightgrey'
+
+  },
+  textinfixfooter:{
+    color: 'white'
+  },
+  containerlistmenu:{
+    flex:1,
+    flexDirection:'row',
+    paddingLeft:15,
+    paddingTop:5,
+    paddingBottom:5
+  },
+  imgicon:{
+    width: 30,
+    height: 30,
+    alignSelf: 'center'
   }
 };

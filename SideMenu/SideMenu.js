@@ -24,18 +24,36 @@ class SideMenu extends Component {
                   source={require('../img/sb-ico.png')}
               />
             </View>
-            <View style={{flex:1,flexDirection:'row',paddingLeft:15,paddingTop:5,paddingBottom:5}}>
+            <View style={styles.containerlistmenu}>
               <Image 
-                    style={{width: 30, height: 30,alignSelf: 'center'}}
+                    style={styles.imgicon}
+                    source={require('../img/production-ico.png')}
+              />
+              <Text style={styles.navItemStyle} onPress={() => this.props.navigation.navigate("ProductionHouse")}>
+                Production House
+              </Text>
+            </View>
+            <View style={styles.containerlistmenu}>
+              <Image 
+                    style={styles.imgicon}
                     source={require('../img/video-ico.png')}
               />
               <Text style={styles.navItemStyle} onPress={() => this.props.navigation.navigate("login")}>
                 Video Production 
               </Text>
             </View>
-            <View style={{flex:1,flexDirection:'row',paddingLeft:15,paddingTop:5,paddingBottom:5}}>
+            <View style={styles.containerlistmenu}>
               <Image 
-                    style={{width: 30, height: 30,alignSelf: 'center'}}
+                    style={styles.imgicon}
+                    source={require('../img/coin-ico.png')}
+              />
+              <Text style={styles.navItemStyle} onPress={() => this.props.navigation.navigate("pricelist")}>
+                Price List
+              </Text>
+            </View>
+            <View style={styles.containerlistmenu}>
+              <Image 
+                    style={styles.imgicon}
                     source={require('../img/information.png')}
               />
               <Text style={styles.navItemStyle} onPress={() => this.props.navigation.navigate("information")}>
@@ -46,7 +64,7 @@ class SideMenu extends Component {
 
         </ScrollView>
         <View style={styles.footerContainer}>
-          <Text>This is my fixed footer</Text>
+          <Text style={styles.textinfixfooter}>Expo By Storyboard V.1.0</Text>
         </View>
       </View>
     );

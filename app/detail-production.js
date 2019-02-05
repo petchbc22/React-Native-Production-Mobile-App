@@ -4,12 +4,11 @@ import {
     Text,
     View,
     TextInput,
-  
+    Button,
     TouchableHighlight,
     Image,
     Alert
 } from 'react-native';
-import { Container, Content, Footer, FooterTab, Button, Icon } from 'native-base';
 
 class LoginScreen extends Component {
 
@@ -57,9 +56,7 @@ class LoginScreen extends Component {
           <TouchableHighlight style={styles.buttonContainer} onPress={() => this.onClickListener('register')}>
               <Text>Register</Text>
           </TouchableHighlight>
-          
         </View>
-        
       );
     }
   }
